@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SKILLOMETER</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Lato&family=Monoton&family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+	
+	
+	
+	<style type="text/css">
+
+		body {
+		  justify-content: center;
+		  align-items: center;
+		  background: #000814;
+		  display: flex;
+		  color: cyan;
+		  font-weight: bold;
+		  padding: 0;
+		  margin: 0;
+		  font-size: 25px;
+		  font-family: 'Cabin Sketch', cursive;
+			font-family: 'Lato', sans-serif;
+			font-family: 'Monoton', cursive;
+			font-family: 'Montserrat', sans-serif;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		.head {
+			font-size: 25px;
+			font-family: 'Noto Sans', sans-serif;
+			text-align: center;
+			color: #FFC000;
+			background-color: #000814;
+			position: absolute;
+		    top: 0px;
+		    min-height: 200px;
+		    width: 100%;
+		}
+		.grid-part {
+			width: 100%;
+			margin-top: 180px;
+		}
+		.foot {
+			text-align: center;
+			background-color: #fcf300;
+			color:black;
+			position: absolute;
+			top:1400px;
+		    bottom: 0px;
+		    height: 200px;
+		    width: 100%;
+		}
+		
+		
+		.progress {
+		  float: right;
+		  background: cyan;
+		  justify-content: flex-start;
+		  border-radius: 100px;
+		  align-items: center;
+		  position: relative;
+		  padding: 0 5px;
+		  display: flex;
+		  height: 25px;
+		  width: 400px;
+		}
+
+		.progress-value {
+			
+		  box-shadow: 0 10px 40px -10px #fff;
+		  border-radius: 100px;
+		  background: #021240;
+		  height: 17px;
+		  width: 0;
+		  
+		}
+
+		@keyframes cpp {0% { width: 0; }100% { width:					40%; }}
+		@keyframes python {0% { width: 0; }100% { width: 				20%; }}
+		@keyframes oops {0% { width: 0; }100% { width:    				20%; }}
+		@keyframes html {0% { width: 0; }100% { width: 					30%; }}
+		@keyframes css {0% { width: 0; }100% { width: 					30%; }}
+		@keyframes js {0% { width: 0; }100% { width: 					10%; }}
+		@keyframes git {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes react {0% { width: 0; }100% { width: 				0%; }}
+		@keyframes excel {0% { width: 0; }100% { width: 				50%; }}
+		@keyframes tableau {0% { width: 0; }100% { width: 				0%; }}
+		@keyframes r {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes linux {0% { width: 0; }100% { width: 				20%; }}
+		@keyframes networking {0% { width: 0; }100% { width: 			0%; }}
+		@keyframes os {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes database {0% { width: 0; }100% { width: 				0%; }}
+		@keyframes az {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes english {0% { width: 0; }100% { width: 				20%; }}
+		@keyframes aptitude {0% { width: 0; }100% { width: 				30%; }}
+
+
+		@keyframes maths {0% { width: 0; }100% { width:					30%; }}
+		@keyframes bitmagic {0% { width: 0; }100% { width: 				0%; }}
+		@keyframes matrix {0% { width: 0; }100% { width:    			10%; }}
+		@keyframes array {0% { width: 0; }100% { width: 				30%; }}
+		@keyframes recursion {0% { width: 0; }100% { width: 			30%; }}
+		@keyframes hashing {0% { width: 0; }100% { width: 				20%; }}
+		@keyframes string {0% { width: 0; }100% { width: 				30%; }}
+		@keyframes searching {0% { width: 0; }100% { width: 			28%; }}
+		@keyframes sorting {0% { width: 0; }100% { width: 				28%; }}
+		@keyframes ll {0% { width: 0; }100% { width: 					20%; }}
+		@keyframes doublyll {0% { width: 0; }100% { width: 				20%; }}
+		@keyframes circularll {0% { width: 0; }100% { width: 			20%; }}
+		@keyframes stak {0% { width: 0; }100% { width: 					20%; }}
+		@keyframes q {0% { width: 0; }100% { width: 					20%; }}
+		@keyframes de_q {0% { width: 0; }100% { width: 					20%; }}
+		@keyframes tree {0% { width: 0; }100% { width: 					5%; }}
+		@keyframes priority_q {0% { width: 0; }100% { width: 			0%; }}
+		@keyframes bst {0% { width: 0; }100% { width: 					0%; }}
+
+
+		@keyframes heap {0% { width: 0; }100% { width:					0%; }}
+		@keyframes stl {0% { width: 0; }100% { width: 					30%; }}
+		@keyframes graph {0% { width: 0; }100% { width:    				0%; }}
+		@keyframes greedy {0% { width: 0; }100% { width: 				25%; }}
+		@keyframes dp {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes backtracking {0% { width: 0; }100% { width: 			0%; }}
+		@keyframes trie {0% { width: 0; }100% { width: 					0%; }}
+		@keyframes segment_t {0% { width: 0; }100% { width: 			0%; }}
+		@keyframes disjoint {0% { width: 0; }100% { width: 				0%; }}
+		@keyframes oth-algo {0% { width: 0; }100% { width: 				0%; }}
+
+
+
+
+		@keyframes r {0% { width: 0; }100% { width: 					28%; }}
+		@keyframes linux {0% { width: 0; }100% { width: 				28%; }}
+		@keyframes networking {0% { width: 0; }100% { width: 			28%; }}
+		@keyframes os {0% { width: 0; }100% { width: 					28%; }}
+		@keyframes database {0% { width: 0; }100% { width: 				28%; }}
+		@keyframes az {0% { width: 0; }100% { width: 					28%; }}
+		@keyframes english {0% { width: 0; }100% { width: 				28%; }}
+		@keyframes aptitude {0% { width: 0; }100% { width: 					28%; }}
+
+
+	</style>
+</head>
+<body>
+<div class="head">
+	<span>Visualize your progress,</span>  
+	<span style="color: white"> Climb your Success </span>
+	<h1>忍者</h1>
+</div>
+<div class="grid-part" style="display: grid; grid-gap: 50px; width: 90%">
+	<div class="grid" style=" grid-column: 1; align-items: center;">
+
+		<br>
+		<div class="skills">
+			<div style="float: left" >CPP</div>
+			<div class="progress">	
+				<div style="animation: cpp 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">PYTHON</div>
+			<div class="progress">
+				<div style="animation: python 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >OOPS</div>
+			<div class="progress">	
+				<div style="animation: oops 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left">HTML</div>
+			<div class="progress">
+				<div style="animation: html 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >CSS</div>
+			<div class="progress">	
+				<div style="animation: css 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">JS</div>
+			<div class="progress">
+				<div style="animation: js 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >GITHUB</div>
+			<div class="progress">	
+				<div style="animation: git 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">REACT</div>
+			<div class="progress">
+				<div style="animation: react 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left" >EXCEL</div>
+			<div class="progress">	
+				<div style="animation: excel 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">TABLEAU</div>
+			<div class="progress">
+				<div style="animation: tableau 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >R</div>
+			<div class="progress">	
+				<div style="animation: r 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br><br>
+		<div class="skills">
+			<div style="float: left">LINUX</div>
+			<div class="progress">
+				<div style="animation: linux 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >NETWORKING</div>
+			<div class="progress">	
+				<div style="animation: networking 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">OS</div>
+			<div class="progress">
+				<div style="animation: os 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >DATBASE</div>
+			<div class="progress">	
+				<div style="animation: database 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">AZURE</div>
+			<div class="progress">
+				<div style="animation: az 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br><br>
+		<div class="skills">
+			<div style="float: left" >VERBAL ABILITY</div>
+			<div class="progress">	
+				<div style="animation: english 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">APTITUDE</div>
+			<div class="progress">
+				<div style="animation: aptitude 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+
+
+
+	</div>
+	<div style="grid-column: 2; align-items: center;">
+		<br>
+		<div><u><b>DATA STRUCTURES AND ALGORITHM</b></u></div>
+		<br>
+		<div class="skills">
+			<div style="float: left">MATHS</div>
+			<div class="progress">
+				<div style="animation: maths 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >BIT MAGIC</div>
+			<div class="progress">	
+				<div style="animation: bitmagic 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">MATRIX</div>
+			<div class="progress">
+				<div style="animation: matrix 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >ARRAY</div>
+			<div class="progress">	
+				<div style="animation: array 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">RECURSION</div>
+			<div class="progress">
+				<div style="animation: recursion 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >STRING</div>
+			<div class="progress">	
+				<div style="animation: string 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">SEARCHING</div>
+			<div class="progress">
+				<div style="animation: searching 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >SORTING</div>
+			<div class="progress">	
+				<div style="animation: sorting 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">HASHING</div>
+			<div class="progress">
+				<div style="animation: hashing 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left" >LINKED LISTS</div>
+			<div class="progress">	
+				<div style="animation: ll 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >CIRCULAR LL</div>
+			<div class="progress">	
+				<div style="animation: circularll 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">DOUBLY LL</div>
+			<div class="progress">
+				<div style="animation: doublyll 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >STACK</div>
+			<div class="progress">	
+				<div style="animation: stak 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">QUEUE</div>
+			<div class="progress">
+				<div style="animation: q 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >DEQUEUE</div>
+			<div class="progress">	
+				<div style="animation: de_q 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">PRIORITY QUEUE</div>
+			<div class="progress">
+				<div style="animation: priority_q 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left" >TREE</div>
+			<div class="progress">	
+				<div style="animation: tree 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >BST</div>
+			<div class="progress">	
+				<div style="animation: bst 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">HEAP</div>
+			<div class="progress">
+				<div style="animation: heap 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >GRAPH</div>
+			<div class="progress">	
+				<div style="animation: graph 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left">GREEDY</div>
+			<div class="progress">
+				<div style="animation: greedy 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >BACKTRACKING</div>
+			<div class="progress">	
+				<div style="animation: backtracking 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">DP</div>
+			<div class="progress">
+				<div style="animation: dp 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		
+		<div class="skills">
+			<div style="float: left" >TRIES</div>
+			<div class="progress">	
+				<div style="animation: tree 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >SEGMENT TREES</div>
+			<div class="progress">	
+				<div style="animation: segment_t 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left">DISJOINT SETS</div>
+			<div class="progress">
+				<div style="animation: disjoint 3s normal forwards;" class="progress-value"></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="skills">
+			<div style="float: left" >OTHER ALGORITHMS</div>
+			<div class="progress">	
+				<div style="animation: oth-algo 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		<div class="skills">
+			<div style="float: left" >STL</div>
+			<div class="progress">	
+				<div style="animation: stl 3s normal forwards;" class="progress-value" ></div>
+			</div>
+		</div>
+		<br>
+		
+
+	</div>
+</div>
+</div>
+<div class="foot">
+	<p>Cheers :)</p>
+	<p>Come Back With More Improvements :) </p>
+	<p><b> 忍者 </b></p>
+</div>
+</body>
+</html>
